@@ -15,7 +15,9 @@ public class ArticleIdHelper {
     public String generateId(String name, String date) {
         String id = transliterator.transliterate(name)
                 .trim()
-                .replace(" ", "") + "-" + date;
+                .replace(" ", "")
+                .replaceAll("[^a-zA-Z0-9-]", "-")
+                .replaceAll("-{2,}", "-") + "-" + date;
         int version = 0;
 
         while (true){

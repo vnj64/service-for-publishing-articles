@@ -5,30 +5,21 @@ import com.example.publishingservice.models.ArticleDTO;
 import com.example.publishingservice.repository.ArticleRepository;
 import com.ibm.icu.text.Transliterator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
+@Component
 public class ArticleMapper {
-
     @Autowired
-    private ArticleRepository articleRepository;
-    Transliterator transliterator = Transliterator.getInstance("Cyrillic-Latin");
-
+    private ArticleIdHelper articleIdHelper;
     public ArticleDBModel mapDTOtoDBModel(ArticleDTO articleDTO) {
         return new ArticleDBModel(
-                generateId(articleDTO.getName(), articleDTO.getDate()),
+                articleIdHelper.generateId(articleDTO.getTitle(),articleDTO.getDate()),
                 articleDTO.getTitle(),
                 articleDTO.getName(),
                 articleDTO.getDate(),
                 articleDTO.getBody()
         );
-    }
-
-    private String generateId(String name, Date date) {
-        String id = transliterator.transliterate(name) + "-" + date;
-        if (articleRepository.existsById(id)){
-            id += ".2";
-        }
-        return id;
     }
 }

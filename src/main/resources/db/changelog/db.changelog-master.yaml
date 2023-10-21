@@ -41,7 +41,7 @@ databaseChangeLog:
                   value: "Кейс от Вебпрактик (блог-платформа)"
               - column:
                   name: name
-                  value: ""
+                  value: "asdf"
               - column:
                   name: date
                   value: "2023-10-22"

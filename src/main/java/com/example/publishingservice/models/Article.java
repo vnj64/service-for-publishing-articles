@@ -11,7 +11,8 @@ import java.util.Date;
 @Setter
 @Entity
 @Table
-public class Post implements Serializable {
+public class Article implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")

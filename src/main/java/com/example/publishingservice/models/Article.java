@@ -25,4 +25,5 @@ public class Article implements Serializable {
     private Date date;
     @Column(name = "body")
     private String body;
+    private String dick;
 }

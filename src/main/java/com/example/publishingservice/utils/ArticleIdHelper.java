@@ -13,12 +13,14 @@ public class ArticleIdHelper {
     Transliterator transliterator = Transliterator.getInstance("Cyrillic-Latin");
 
     public String generateId(String name, String date) {
+        String id = transliterator.transliterate(name)
+                .trim()
+                .replace(" ", "")
+                .replaceAll("[^a-zA-Z0-9-]", "-") + "-" + date;
 
-        String id = transliterator.transliterate(name).trim();
-        id += "-" + date;
-        id = id.replaceAll("-{2,}", "-").replace(" ", "").replaceAll("[^a-zA-Z0-9-]", "-");
-
+        id = id.replaceAll("-{2,}", "-");
         int version = 0;
+
         while (true){
             if (articleRepository.existsById(id + "-" + version))
                 version++;

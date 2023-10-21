@@ -17,19 +17,27 @@ public class ArticleIdHelper {
                 .trim()
                 .replace(" ", "")
                 .replaceAll("[^a-zA-Z0-9-]", "-") + "-" + date;
-
         id = id.replaceAll("-{2,}", "-");
+
         int version = 0;
 
         while (true){
-            if (articleRepository.existsById(id + "-" + version))
+            if (isExists(id, version))
                 version++;
             else{
-                id += "-" + version;
+                if (version != 0)
+                    id += "-" + version;
                 break;
             }
         }
 
         return id;
+    }
+
+    private boolean isExists(String id, int version){
+        if (version == 0)
+            return articleRepository.existsById(id);
+        else
+            return articleRepository.existsById(id + "-" + version);
     }
 }

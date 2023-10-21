@@ -13,7 +13,9 @@ public class ArticleIdHelper {
     Transliterator transliterator = Transliterator.getInstance("Cyrillic-Latin");
 
     public String generateId(String name, String date) {
-        String id = transliterator.transliterate(name).trim().replace(" ", "-") + "-" + date;
+        String id = transliterator.transliterate(name)
+                .trim()
+                .replace(" ", "") + "-" + date;
         int version = 0;
 
         while (true){

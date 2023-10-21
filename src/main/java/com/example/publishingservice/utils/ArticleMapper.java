@@ -15,7 +15,7 @@ public class ArticleMapper {
     private ArticleIdHelper articleIdHelper;
     public ArticleDBModel mapDTOtoDBModel(ArticleDTO articleDTO) {
         return new ArticleDBModel(
-                articleIdHelper.generateId(articleDTO.getTitle(),articleDTO.getDate()),
+                articleIdHelper.generateId(articleDTO.getTitle(), articleDTO.getDate()),
                 articleDTO.getTitle(),
                 articleDTO.getName(),
                 articleDTO.getDate(),

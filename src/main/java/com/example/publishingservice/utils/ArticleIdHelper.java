@@ -25,8 +25,7 @@ public class ArticleIdHelper {
             if (articleRepository.existsById(id + "-" + version))
                 version++;
             else{
-                if (version != 0)
-                    id += "-" + version;
+                id += "-" + version;
                 break;
             }
         }

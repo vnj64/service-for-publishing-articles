@@ -23,7 +23,7 @@ public class ArticleDBModel {
     @Column(name = "name")
     private String name;
     @Column(name = "date")
-    private Date date;
+    private String date;
     @Column(name = "body")
     private String body;
 }

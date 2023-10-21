@@ -14,6 +14,6 @@ public class ArticleDTO {
 
     private String title;
     private String name;
-    private Date date;
+    private String date;
     private String body;
 }

@@ -5,10 +5,6 @@ import com.ibm.icu.text.Transliterator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
-
 @Component
 public class ArticleIdHelper {
 
@@ -16,7 +12,7 @@ public class ArticleIdHelper {
     private ArticleRepository articleRepository;
     Transliterator transliterator = Transliterator.getInstance("Cyrillic-Latin");
 
-    public String generateId(String name, Date date) {
+    public String generateId(String name, String date) {
         String id = transliterator.transliterate(name).trim().replace(" ", "-") + "-" + date;
         int version = 0;
 

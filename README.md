@@ -1,8 +1,8 @@
 ## <h1 align="center">Inkwell</h1>
 <img src="readme_assets/project_page.png">
-### About us
 
-* Web service for creating and publishing anonymous articles *
+### About us
+Web service for creating and publishing anonymous articles
 
 ### Project setup
 

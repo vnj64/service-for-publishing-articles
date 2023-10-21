@@ -20,10 +20,16 @@ public class ArticleDBModel {
     private String id;
     @Column(name = "title")
     private String title;
+    @Column(name = "coverImage")
+    private String coverImage;
     @Column(name = "name")
     private String name;
     @Column(name = "date")
     private String date;
     @Column(name = "body")
     private String body;
+    @Column(name = "articleTheme")
+    private String articleTheme;
+    @Column(name = "theme")
+    private String theme;
 }

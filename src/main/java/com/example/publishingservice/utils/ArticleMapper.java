@@ -13,9 +13,12 @@ public class ArticleMapper {
         return new ArticleDBModel(
                 articleIdHelper.generateId(articleDTO.getTitle(), articleDTO.getDate()),
                 articleDTO.getTitle(),
+                articleDTO.getCoverImage(),
                 articleDTO.getName(),
                 articleDTO.getDate(),
-                articleDTO.getBody()
+                articleDTO.getBody(),
+                articleDTO.getArticleTheme(),
+                articleDTO.getTheme()
         );
     }
 }

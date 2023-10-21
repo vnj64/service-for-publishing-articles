@@ -1,5 +1,5 @@
 ## <h1 align="center">Inkwell</h1>
-![Main page](https://thumb.cloud.mail.ru/thumb/xw1/%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%282%29.png)
+<img src="readme_assets/project_page.png">
 ### About us
 
 * Web service for creating and publishing anonymous articles *
@@ -28,3 +28,24 @@ server.address={your_address / or delete this string}
 ./mvnw spring-boot:run
 or
 run BookShopApplication from your IDE.
+```
+
+### API
+```http request
+GET http://212.193.62.200:8080/api/articles?id=HelloWorld-2023-10-21
+```
+```http request
+POST http://212.193.62.200:8080/api/articles
+```
+The POST request has a request body in the format:
+```json
+{
+    "title": "Кейс жесть от Вебпрактик (блог-платформа) test",
+    "coverImage": "asdf",
+    "name": "",
+    "date": "2023-10-21",
+    "body": "Хороший вопрос",
+    "articleTheme": "test",
+    "theme": "test"
+}
+```

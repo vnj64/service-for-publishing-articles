@@ -14,19 +14,17 @@ public class ArticleIdHelper {
 
     public String generateId(String name, String date) {
 
-        String id = transliterator.transliterate(name)
-                .trim()
-                .replace(" ", "")
-                .replaceAll("[^a-zA-Z0-9-]", "-") + "-" + date;
-
-        id = id.replaceAll("-{2,}", "-");
+        String id = transliterator.transliterate(name).trim();
+        id += "-" + date;
+        id = id.replaceAll("-{2,}", "-").replace(" ", "").replaceAll("[^a-zA-Z0-9-]", "-");
 
         int version = 0;
         while (true){
             if (articleRepository.existsById(id + "-" + version))
                 version++;
             else{
-                id += "-" + version;
+                if (version != 0)
+                    id += "-" + version;
                 break;
             }
         }

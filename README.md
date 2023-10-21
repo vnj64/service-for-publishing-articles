@@ -1,4 +1,11 @@
-## Project setup.
+## <h1 align="center">Inkwell</h1>
+![Main page](https://thumb.cloud.mail.ru/thumb/xw1/%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%282%29.png)
+### About us
+
+* Web service for creating and publishing anonymous articles *
+
+### Project setup
+
 ```bash
 # Clone repository
 git clone git@github.com:vnj64/service-for-publishing-articles.git
@@ -21,4 +28,3 @@ server.address={your_address / or delete this string}
 ./mvnw spring-boot:run
 or
 run BookShopApplication from your IDE.
-```

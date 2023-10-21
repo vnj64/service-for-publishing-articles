@@ -13,7 +13,10 @@ import java.util.Date;
 public class ArticleDTO {
 
     private String title;
+    private String coverImage;
     private String name;
     private String date;
     private String body;
+    private String articleTheme;
+    private String theme;
 }

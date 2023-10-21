@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM openjdk:17
 
 ENV JAR_FILE=publishing-service-0.0.1-SNAPSHOT.jar
 

@@ -12,6 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/articles")
+@CrossOrigin
 public class ArticleController {
 
     @Autowired

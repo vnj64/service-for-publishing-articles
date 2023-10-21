@@ -1,0 +1,50 @@
+databaseChangeLog:
+  - logicalFilePath: db/changelog/db.changelog-master.yaml
+  - changeSet:
+      id: 1
+      author: vnJ
+      changes:
+        - createTable:
+            tableName: article
+            columns:
+              - column:
+                  name: id
+                  type: varchar
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: title
+                  type: varchar
+              - column:
+                  name: name
+                  type: varchar
+              - column:
+                  name: date
+                  type: varchar
+              - column:
+                  name: body
+                  type: varchar
+  - changeSet:
+      id: 2
+      author: vnJ
+      comment: inserting test data
+      changes:
+        - insert:
+            tableName: article
+            columns:
+              - column:
+                  name: id
+                  value: "KejsotVebpraktik-blog-platforma-2023-10-22"
+              - column:
+                  name: title
+                  value: "Кейс от Вебпрактик (блог-платформа)"
+              - column:
+                  name: name
+                  value: ""
+              - column:
+                  name: date
+                  value: "2023-10-22"
+              - column:
+                  name: body
+                  value: "тестовый бади!"

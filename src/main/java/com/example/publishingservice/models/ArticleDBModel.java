@@ -1,28 +1,29 @@
 package com.example.publishingservice.models;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-@Getter
-@Setter
+@Data
 @Entity
-@Table
-public class Article implements Serializable {
+@AllArgsConstructor
+@NoArgsConstructor
+@Table(name = "Article")
+public class ArticleDBModel {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Long id;
+    private String id;
     @Column(name = "title")
     private String title;
     @Column(name = "name")
     private String name;
     @Column(name = "date")
-    private Date date;
+    private String date;
     @Column(name = "body")
     private String body;
 }

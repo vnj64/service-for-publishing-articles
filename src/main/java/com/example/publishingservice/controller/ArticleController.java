@@ -43,6 +43,6 @@ public class ArticleController {
             @ApiParam("Creates article")
             @RequestBody ArticleDTO articleDTO
     ) {
-        return ResponseEntity.ok(articleService.create(articleDTO));
+            return ResponseEntity.ok(articleService.create(articleDTO));
     }
 }

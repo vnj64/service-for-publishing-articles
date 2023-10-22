@@ -32,7 +32,7 @@ public class ArticleControllerTest {
     }
     @Test
     public void testCreateArticle() throws Exception {
-        ArticleDTO articleDTO = new ArticleDTO("Test", "Hello", "Name", "23-10", "Body", "Theme", "Theme1");
+        ArticleDTO articleDTO = new ArticleDTO("Test", "Hello", "Name", "23-10", "Body", "Theme");
         String articleJson = new ObjectMapper().writeValueAsString(articleDTO);
 
         mockMvc.perform(MockMvcRequestBuilders.post("api/article")

@@ -1,7 +1,6 @@
 /home/zakhar/IdeaProjects/service-for-publishing-articles/src/main/java/com/example/publishingservice/controller/ArticleController.java
 /home/zakhar/IdeaProjects/service-for-publishing-articles/src/main/java/com/example/publishingservice/PublishingServiceApplication.java
 /home/zakhar/IdeaProjects/service-for-publishing-articles/src/main/java/com/example/publishingservice/repository/ArticleRepository.java
-/home/zakhar/IdeaProjects/service-for-publishing-articles/src/main/java/com/example/publishingservice/configuration/CorsConfig.java
 /home/zakhar/IdeaProjects/service-for-publishing-articles/src/main/java/com/example/publishingservice/models/ArticleDTO.java
 /home/zakhar/IdeaProjects/service-for-publishing-articles/src/main/java/com/example/publishingservice/utils/ArticleMapper.java
 /home/zakhar/IdeaProjects/service-for-publishing-articles/src/main/java/com/example/publishingservice/models/IdResponseDTO.java

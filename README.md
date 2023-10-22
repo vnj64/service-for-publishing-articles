@@ -64,6 +64,12 @@ The POST request has a request body in the format:
   "theme": "testTheme"
 }
 ```
+### Swagger UI.
+You can use a swagger to test only requests.
+```http request
+GET https://publishing-service-pn20.onrender.com/swagger-ui.html#
+```
+
 
 ### Collaborators.
 - [vnJ](https://github.com/vnj64) - Backend Java Developer

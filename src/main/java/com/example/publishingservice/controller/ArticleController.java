@@ -2,12 +2,14 @@ package com.example.publishingservice.controller;
 
 import com.example.publishingservice.models.ArticleDBModel;
 import com.example.publishingservice.models.ArticleDTO;
+import com.example.publishingservice.models.IdResponseDTO;
 import com.example.publishingservice.service.ArticleService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -39,10 +41,12 @@ public class ArticleController {
 
     @PostMapping
     @ApiOperation("Create article")
-    public ResponseEntity<String> createArticle(
+    public ResponseEntity<IdResponseDTO> createArticle(
             @ApiParam("Creates article")
             @RequestBody ArticleDTO articleDTO
     ) {
-        return ResponseEntity.ok(articleService.create(articleDTO));
+        return ResponseEntity.ok()
+                .contentType(MediaType.APPLICATION_JSON)
+                .body(new IdResponseDTO(articleService.create(articleDTO)));
     }
 }

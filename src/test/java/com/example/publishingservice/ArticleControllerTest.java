@@ -35,7 +35,7 @@ public class ArticleControllerTest {
         ArticleDTO articleDTO = new ArticleDTO("Test", "Hello", "Name", "23-10", "Body", "Theme");
         String articleJson = new ObjectMapper().writeValueAsString(articleDTO);
 
-        mockMvc.perform(MockMvcRequestBuilders.post("api/article")
+        mockMvc.perform(MockMvcRequestBuilders.post("/api/articles")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(articleJson)
                         .accept(MediaType.APPLICATION_JSON))
@@ -45,7 +45,7 @@ public class ArticleControllerTest {
 
     @Test
     public void testGetArticle() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/api/articles/{articleId}", "test-21-10")
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/articles/?id={articleId}", "KejsotVebpraktik-blog-platforma-2023-10-22")
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON));
@@ -53,7 +53,7 @@ public class ArticleControllerTest {
 
     @Test
     public void testGetArticleNotFound() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/api/articles/{articleId}", "")
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/articles/?id={articleId}", "")
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound());
     }

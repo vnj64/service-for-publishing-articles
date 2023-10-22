@@ -61,6 +61,6 @@ The POST request has a request body in the format:
 ### Collaborators.
 - [vnJ](https://github.com/vnj64) - Backend Java Developer
 - [Zakhar](https://github.com/ZakharEvv) - Backend Java Developer
-
+- [0xNikitos](https://github.com/darkystacks) - Frontend Developer
 ### Issue.
 If you have any ideas, how we can impove this project or any complaints, please write an [issue](https://github.com/vnj64/service-for-publishing-articles/issues), or text me on [telegram](https://t.me/arszdarszd) **^^**.

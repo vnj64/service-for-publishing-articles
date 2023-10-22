@@ -4,6 +4,14 @@
 ### About us
 Web service for creating and publishing anonymous articles
 
+### Technology stack.
+- Java 17
+- Spring Boot
+- PostgreSQL
+- Liquibase
+- Hibernate JPA
+- Docker
+
 ### Project setup
 
 ```bash

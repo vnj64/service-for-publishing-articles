@@ -20,7 +20,7 @@ public class ArticleDBModel {
     private String id;
     @Column(name = "title")
     private String title;
-    @Column(name = "coverImage")
+    @Column(name = "cover_image")
     private String coverImage;
     @Column(name = "name")
     private String name;
@@ -28,8 +28,6 @@ public class ArticleDBModel {
     private String date;
     @Column(name = "body")
     private String body;
-    @Column(name = "articleTheme")
-    private String articleTheme;
     @Column(name = "theme")
     private String theme;
 }

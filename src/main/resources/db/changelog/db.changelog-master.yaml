@@ -29,9 +29,6 @@ databaseChangeLog:
                   name: body
                   type: varchar
               - column:
-                  name: article_theme
-                  type: varchar
-              - column:
                   name: theme
                   type: varchar
   - changeSet:
@@ -50,7 +47,7 @@ databaseChangeLog:
                   value: "Кейс от Вебпрактик (блог-платформа)"
               - column:
                   name: cover_image
-                  type: "test"
+                  value: "test"
               - column:
                   name: name
                   value: "asdf"
@@ -60,9 +57,6 @@ databaseChangeLog:
               - column:
                   name: body
                   value: "тестовый бади!"
-              - column:
-                  name: article_theme
-                  type: "test"
               - column:
                   name: theme
                   type: "test"

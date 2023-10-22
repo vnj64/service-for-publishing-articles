@@ -17,7 +17,6 @@ public class ArticleMapper {
                 articleDTO.getName(),
                 articleDTO.getDate(),
                 articleDTO.getBody(),
-                articleDTO.getArticleTheme(),
                 articleDTO.getTheme()
         );
     }

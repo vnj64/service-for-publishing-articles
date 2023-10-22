@@ -17,6 +17,5 @@ public class ArticleDTO {
     private String name;
     private String date;
     private String body;
-    private String articleTheme;
     private String theme;
 }

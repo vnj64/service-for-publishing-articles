@@ -45,7 +45,6 @@ The POST request has a request body in the format:
     "name": "",
     "date": "2023-10-21",
     "body": "Хороший вопрос",
-    "articleTheme": "test",
     "theme": "test"
 }
 ```

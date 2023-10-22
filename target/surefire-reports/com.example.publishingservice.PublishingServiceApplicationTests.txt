@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.publishingservice.PublishingServiceApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.72 s - in com.example.publishingservice.PublishingServiceApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.32 s - in com.example.publishingservice.PublishingServiceApplicationTests

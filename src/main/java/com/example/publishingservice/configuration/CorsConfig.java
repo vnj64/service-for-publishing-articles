@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 public class CorsConfig extends WebMvcConfigurationSupport {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**").allowedOrigins("*").allowedMethods("*")
+        registry.addMapping("/**").allowedOrigins("https://inkwell-five.vercel.app:5173", "https://inkwell-five.vercel.app:8080").allowedMethods("*")
                 .allowCredentials(true);
     }
 }

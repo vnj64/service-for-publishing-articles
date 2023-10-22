@@ -17,7 +17,18 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/articles")
-@CrossOrigin
+@CrossOrigin(
+        origins = {
+                "http://localhost:8080",
+                "https://inkwell-five.vercel.app/"
+        },
+        methods = {
+                RequestMethod.OPTIONS,
+                RequestMethod.GET,
+                RequestMethod.PUT,
+                RequestMethod.DELETE,
+                RequestMethod.POST
+        })
 @Api(tags = "Articles")
 public class ArticleController {
 

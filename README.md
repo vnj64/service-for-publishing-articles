@@ -6,12 +6,19 @@ Web service for creating and publishing anonymous articles. The URL of each arti
 [**_Enjoy here_**](https://inkwell-five.vercel.app/Komanda-Obez-n-vozn-vykatilareliz-22-10)!
 
 ### Technology stack.
+_Backend:_
 - Java 17
 - Spring Boot
 - PostgreSQL
 - Liquibase
 - Hibernate JPA
 - Docker
+
+[_Frontend:_](https://github.com/darkystacks/inkwell/tree/main)
+- React
+- Typescript
+- React-draft-wysiwyg
+- RTK Query
 
 ### Project setup.
 
@@ -62,5 +69,6 @@ The POST request has a request body in the format:
 - [vnJ](https://github.com/vnj64) - Backend Java Developer
 - [Zakhar](https://github.com/ZakharEvv) - Backend Java Developer
 - [0xNikitox](https://github.com/darkystacks) - Frontend Developer
+
 ### Issue.
 If you have any ideas, how we can impove this project or any complaints, please write an [issue](https://github.com/vnj64/service-for-publishing-articles/issues), or text me on [telegram](https://t.me/arszdarszd) **^^**.

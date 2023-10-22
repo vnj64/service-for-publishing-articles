@@ -30,7 +30,7 @@ spring.datasource.url=jdbc:postgresql://localhost:{port}/{postgres_user}
 spring.datasource.username={postgres_user}
 spring.datasource.password={postgres_password}
 
-server.port=3030
+server.port=8080
 server.address={your_address / or delete this string}
 
 # Run the maven collector.
@@ -41,26 +41,26 @@ run BookShopApplication from your IDE.
 
 ### API.
 ```http request
-GET http://212.193.62.200:8080/api/articles?id=HelloWorld-2023-10-21
+GET https://publishing-service-pn20.onrender.com/api/articles?id=Kejs-est-otVebpraktik-blog-platforma-test-2023-10-21
 ```
 ```http request
-POST http://212.193.62.200:8080/api/articles
+POST https://publishing-service-pn20.onrender.com/api/articles
 ```
 The POST request has a request body in the format:
 ```json
 {
-    "title": "Кейс жесть от Вебпрактик (блог-платформа) test",
-    "coverImage": "asdf",
-    "name": "",
-    "date": "2023-10-21",
-    "body": "Хороший вопрос",
-    "theme": "test"
+  "title": "Кейс от Вебпрактик (блог-платформа)",
+  "coverImage": "coverImage",
+  "name": "author",
+  "date": "2023-10-22",
+  "body": "it`s a body",
+  "theme": "testTheme"
 }
 ```
 
 ### Collaborators.
 - [vnJ](https://github.com/vnj64) - Backend Java Developer
 - [Zakhar](https://github.com/ZakharEvv) - Backend Java Developer
-- [0xNikitos](https://github.com/darkystacks) - Frontend Developer
+- [0xNikitox](https://github.com/darkystacks) - Frontend Developer
 ### Issue.
 If you have any ideas, how we can impove this project or any complaints, please write an [issue](https://github.com/vnj64/service-for-publishing-articles/issues), or text me on [telegram](https://t.me/arszdarszd) **^^**.

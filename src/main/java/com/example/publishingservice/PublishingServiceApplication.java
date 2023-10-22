@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
 @SpringBootApplication
+
 public class PublishingServiceApplication {
 
     public static void main(String[] args) {

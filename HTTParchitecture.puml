@@ -1,0 +1,5 @@
+@startuml
+Client -> Server: POST DTO
+Server --> Client: 200 OK --> redirect: /{articleID}
+Client -> Server: GET /api/articles?id={articleID}
+@enduml
